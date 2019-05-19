@@ -1,0 +1,116 @@
+/*    GLOBAL    */
+body {
+  font-family: 'Quicksand', sans-serif;
+  padding: 0px;
+  margin: 0px;
+}
+a {
+  text-decoration: none;
+}
+/*    END GLOBAL    */
+/*    NAVIGATION    */
+#navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.menu {
+  font-size: 16px;
+  cursor: pointer;
+}
+.menu:hover {
+  opacity: .5;
+  transition: .5s;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.menu-links {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 50px;
+}
+/*    END NAVIGATION    */
+
+
+/*    LANDING   */
+#landing {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.left-landing {
+  width: 40%;
+}
+.right-landing {
+  width: 30%;
+}
+
+/*    END LANDING    */
+
+
+@media screen and (max-height: 450px) {
+/*    NAVIGATION    */
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+/*    END NAVIGATION    */
+}
+@media screen and (min-width: 680px) {
+  #fixed-nav {
+    padding: 80px;
+    background-color: pink;
+    position:fixed;
+    right: 0px;
+    top: 0px;
+    width: 30%;
+    height: 100%;
+    float: right;
+  }
+
+  .menu {
+    font-size: 13px;
+  }
+  .closebtn {
+    display: none;
+  }
+}
