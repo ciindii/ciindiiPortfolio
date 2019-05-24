@@ -5,11 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="maincss.css">
-  <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Quicksand&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
   <title>Document</title>
 </head>
 <body>
+  <!-- fixed-nav for med-large screens  -->
   <div id="fixed-nav">
     <div id="navigation">
       <div class="logo"><a href="index.html">C.</a></div>
@@ -25,45 +26,68 @@
         <a href="#">Contact</a>
       </div>
     </div>
-
-    <h1>cindy truong.</h1>
-    <h2>web developer</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, quasi inventore aliquid sequi sed consequatur, nemo ea unde neque quas.</p>
+  </div>
+  <div id="landing">
+    <div class="landing-content">
+      <span>Hello, I'm</span>
+      <h1>cindy truong.</h1>
+      <h2>/ / web developer</h2>
+      <p>why did the web developer leave the resturant? <br>
+      because of the table layout.</p>
+      <a href="#projects">hear another joke</a>
+    </div>
   </div>
   <div id="wrapper">
-    <div id="landing">
-      <div class="left-landing">
-
-        <a href="#projects">view projects</a>
-      </div>
-      <div class="right-landing">
-        img here
-      </div>
+    <div id="about">
+      <h2>a little about me</h2>
+      <p>all jokes aside, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, nostrum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque obcaecati ut rerum dolores beatae facere.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis deserunt saepe error explicabo rem vitae itaque, incidunt nemo, quam recusandae!</p>
     </div>
-    <div id="about"></div>
     <div id="skills">
-      <p>Languages
-          HTML5
-          CSS3
-          JavaScript (ES5, ES6)
-      </p>
-      <p>
-        Libraries
-          JQuery
-          ReactJS
-      </p>
-      <p>
-        Other Skills & Knowledge
-          Responsive Web Design
-      </p>
-      <p>
-        Tools
-          Photoshop
-          Git
-      </p>
+      <div class="skillsimg"></div>
+      <h2>what i can do</h2>
+        <span>Languages</span>
+          <p><i class="fab fa-html5"></i> HTML5</p>
+          <p><i class="fab fa-css3-alt"></i> CSS3</p>
+          <p><i class="fab fa-js-square"></i> JavaScript (ES5, ES6)</p>
+
+        <span>Libraries</span>
+          <p><i class="fab fa-react"></i> ReactJS</p>
+
+        <span>Tools</span>
+          <p><i class="fab fa-adobe"></i> Photoshop</p>
+          <p><i class="fab fa-git-alt"></i> Git</p>
+
+        <span>Other</span>
+            <p><i class="fas fa-mobile"></i> Responsive Web Design</p>
     </div>
-    <div id="projects"></div>
-    <div id="contact"></div>
+    <div id="projects">
+    <h2>projects</h2>
+    <div class="project-container">
+
+      <div class="project-card">
+        <h3>Ellie Beauty House</h3>
+        <p class="date">2018</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati perspiciatis magnam voluptate numquam dolore sed!</p>
+        <button>view project</button>
+        </div>
+      </div>
+      <div class="project-card">
+        <h3>Prolific Elegance</h3>
+        <p class="date">2019</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati perspiciatis magnam voluptate numquam dolore sed!</p>
+        <button>view project</button>
+      </div>
+      <div class="project-card">
+        <h3>TITLE</h3>
+        <p class="date">$19.99</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati perspiciatis magnam voluptate numquam dolore sed!</p>
+        <button>view project</button>
+      </div>
+    </div>
+    <div id="contact">
+    <h2>contact me</h2>
+    </div>
   </div>
   <footer></footer>
   <script src="scripts.js"></script>
