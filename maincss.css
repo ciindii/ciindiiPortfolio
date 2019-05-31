@@ -92,6 +92,11 @@ h2{
   font-size: 50px;
 }
 
+/* hides overlay addEventListener */
+.js-is-hidden {
+	width: 0%;
+}
+
 /*    END NAVIGATION    */
 
 
@@ -128,7 +133,8 @@ h2{
 
 /* SKILLS */
 #skills {
-
+  padding: 60px;
+  border: solid 1px #eee;
 }
 
 #skills span {
@@ -146,14 +152,13 @@ h2{
 /* PROJECTS */
 .project-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 .project-card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   margin-top: 30px;
   height: 300px;
-  width: 100%;
   padding:  20px;
   text-align: left;
   font-family: arial;
@@ -161,8 +166,9 @@ h2{
 .project-card h3,
 .date {
   font-family: 'Julius Sans One', sans-serif;
-  line-height: 10px;
+  padding: 3px;
   background-color: #fff;
+  opacity: .5;
 }
 .project-card h3 {
   letter-spacing: 5px;
@@ -198,7 +204,12 @@ h2{
 
 .card-1 {
   background-image: url('img/ellieproject-card.png');
-  background-position: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+.card-2 {
+  background-image: url('img/prolificE-card.png');
+  background-position: right;
   background-repeat: no-repeat;
 }
 /* END PROJECTS */
@@ -238,6 +249,11 @@ h2{
 /*    END NAVIGATION    */
 }
 @media screen and (min-width: 680px) {
+  #landing,
+  #wrapper {
+    width: 50%;
+
+  }
   #fixed-nav {
     padding: 50px;
     background-color: pink;
@@ -278,11 +294,13 @@ h2{
     justify-content: space-between;
     width: 50%;
     margin: 0 auto;
+      padding-top: 250px;
   }
   .download-files-lg {
     text-align: center;
     letter-spacing: 3px;
     margin-top: 20px;
+    padding-top: 30px;
   }
   .download-files-lg a {
     font-size: 13px;
