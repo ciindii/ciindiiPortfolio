@@ -3,6 +3,7 @@ body {
   font-family: 'Quicksand', sans-serif;
   padding: 0px;
   margin: 0px;
+  height: 100vh;
 }
 footer {
   text-align: center;
@@ -23,7 +24,7 @@ h2{
 #skills,
 #projects,
 #contact {
-  margin: 60px 0;
+  margin: 80px 0;
 }
 
 /* hide lg screen panel content in nav */
@@ -102,10 +103,7 @@ h2{
 
 /*    LANDING   */
 #landing {
-  background-image: url('./img/large.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right;
+  background: url('./img/large.png') no-repeat center center / contain;
   overflow: hidden;
   max-width: 100%;
   margin-top: 50px;
@@ -129,7 +127,23 @@ h2{
   opacity: .5;
 }
 
+/* cursor */
+.txt-type > .txt{
+  border-right: 0.2rem solid red;
+}
 /*    END LANDING    */
+
+/* ABOUT */
+#about {
+  margin: 50px 0;
+  padding: 50px 0 ;
+}
+#about a {
+  color: pink;
+  padding: 40px;
+}
+
+/* END ABOUT */
 
 /* SKILLS */
 #skills {
@@ -223,6 +237,7 @@ h2{
   opacity: .5;
   transition: .6s;
 }
+
 
 .socialmedia-sm {
   font-size: 25px;
