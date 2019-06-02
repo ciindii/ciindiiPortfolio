@@ -21,12 +21,12 @@ document.getElementById('copyright-year').innerHTML = `${crYear}`;
 //shows email address when hovering 'email me'
 function showemail(x) {
   x.innerHTML = 'cindythitruong@gmail.com';
-  x.style.transition = "2s";
+  x.style.transition = ".5s ease-in-out";
 }
 function hideemail(x){
   x.innerHTML =   `<i class="email-me fas fa-paper-plane"></i> email me`;
 }
-  document.querySelector('#contact a').style.transition = "2s";
+  document.querySelector('#contact a').style.transition = ".5s ease";
 
 
 //ES6 class
@@ -57,7 +57,7 @@ class TypeWriter {
     //insert txt into Element
     this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
     //Intial type speed
-    let typeSpeed = 300;
+    let typeSpeed = 100;
     if(this.isDeleting) {
       typeSpeed /=  2;
     }
@@ -73,7 +73,7 @@ class TypeWriter {
       //move onto next words
       this.wordIndex++;
       //pause before start typeing
-      typeSpeed = 500;
+      typeSpeed = 800;
     }
     setTimeout(() => this.type(), typeSpeed);
   }

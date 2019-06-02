@@ -26,11 +26,15 @@ h2{
 #contact {
   margin: 80px 0;
 }
+hr {
+  border: .5px solid gold;
+}
 
 /* hide lg screen panel content in nav */
 .lg-panel {
   display: none;
 }
+
 
 /*    END GLOBAL    */
 
@@ -103,33 +107,35 @@ h2{
 
 /*    LANDING   */
 #landing {
-  background: url('./img/large.png') no-repeat center center / contain;
+  background: url('./img/landing.jpeg') no-repeat center center / cover;
   overflow: hidden;
   max-width: 100%;
-  margin-top: 50px;
   height: 450px;
+  color: #fff;
 }
 .landing-content {
-  padding-left: 30px;
-  width: 60%;
+  padding: 70px 50px;
 }
-#landing span {
-  padding-left: 200px;
-  letter-spacing: 6px;
+#landing p {
+  text-align: right;
+  letter-spacing: 5px;
+
 }
+
 #landing h1 {
   letter-spacing: 3px;
   margin-top: 0;
   font-size: 40px;
   text-transform: uppercase;
 }
-#landing p {
-  opacity: .5;
+#landing span {
+  opacity: .9;
+  font-size: 30px;
 }
 
 /* cursor */
 .txt-type > .txt{
-  border-right: 0.2rem solid red;
+  border-right: 0.2rem solid gold;
 }
 /*    END LANDING    */
 
@@ -142,6 +148,9 @@ h2{
   color: pink;
   padding: 40px;
 }
+#about p {
+  padding-bottom: 50px;
+}
 
 /* END ABOUT */
 
@@ -150,7 +159,6 @@ h2{
   padding: 60px;
   border: solid 1px #eee;
 }
-
 #skills span {
   font-size: 17px;
   display: block;
@@ -162,69 +170,93 @@ h2{
   margin: 0;
   color: gray;
 }
+.skills-content {
+  padding-bottom: 50px;
+}
 /* END SKILLS */
+
+
 /* PROJECTS */
-.project-container {
-  display: flex;
-  flex-direction: column;
-}
-.project-card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  margin-top: 30px;
-  height: 300px;
-  padding:  20px;
-  text-align: left;
-  font-family: arial;
-}
-.project-card h3,
+#projects h3,
 .date {
   font-family: 'Julius Sans One', sans-serif;
-  padding: 3px;
-  background-color: #fff;
-  opacity: .5;
 }
-.project-card h3 {
-  letter-spacing: 5px;
+#projects h3 {
+  letter-spacing: 2px;
   font-size: 25px;
   text-transform: uppercase;
   font-weight: lighter;
+  margin-bottom: 0;
+  padding-top: 50px;
 }
-
 .date {
-  color: #000;
-  font-size: 18px;
+  color: gold;
+  font-size: 15px;
+  margin-top: 0;
+  padding: 5px 10px;
 }
 
-.project-card button {
-  border: none;
-  opacity: .7;
-  outline: 0;
-  padding: 12px;
-  margin-top: 130px;
-  color: white;
-  background-color: #ffcccc;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  text-transform: uppercase;
-  font-size: 18px;
+.card {
+  position: relative;
 }
 
-.project-card button:hover {
+.card-image {
   opacity: 1;
-  transition: .5s;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.card:hover .card-image {
+  opacity: 0.5;
+  counter: pointer;
+}
+
+.card:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #ffcccc;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+  opacity: 1;
+  transition: .5s ease;
+}
+.text:hover {
+  background-color: gold;
 }
 
 .card-1 {
-  background-image: url('img/ellieproject-card.png');
-  background-position: right;
-  background-repeat: no-repeat;
+
 }
 .card-2 {
-  background-image: url('img/prolificE-card.png');
-  background-position: right;
-  background-repeat: no-repeat;
+
+}
+/* shown on sm screens */
+.sm-view-project {
+  text-align: center;
+  padding: 30px;
+}
+.sm-view-project a{
+  padding: 15px;
+  letter-spacing: 2px;
+  background-color: #ffcccc;
+  color: #fff;
 }
 /* END PROJECTS */
 
@@ -232,12 +264,18 @@ h2{
 
 #contact a{
   color: #ffcccc;
+  transition: .5s ease;
 }
 #contact a:hover {
   opacity: .5;
   transition: .6s;
 }
 
+.email-div {
+  padding: 50px 30px;
+  color: #fff;
+  text-align: center;
+}
 
 .socialmedia-sm {
   font-size: 25px;
@@ -280,6 +318,11 @@ h2{
     float: right;
   }
 
+  /* hide while in lg screen  */
+  .sm {
+    display: none;
+  }
+
   .menu {
     font-size: 13px;
     color: #fff;
@@ -315,7 +358,7 @@ h2{
     text-align: center;
     letter-spacing: 3px;
     margin-top: 20px;
-    padding-top: 30px;
+    padding-top: 20px;
   }
   .download-files-lg a {
     font-size: 13px;
