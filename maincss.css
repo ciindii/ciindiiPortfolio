@@ -34,8 +34,10 @@ hr {
 .lg-panel {
   display: none;
 }
-
-
+/* hidden while in small screen */
+.sm {
+  display: none;
+}
 /*    END GLOBAL    */
 
 
@@ -81,7 +83,6 @@ hr {
 .overlay a {
   padding: 8px;
   text-decoration: none;
-  font-family: 'Quicksand', sans-serif;
   font-size: 36px;
   color: #818181;
   display: block;
@@ -241,12 +242,47 @@ hr {
   background-color: gold;
 }
 
-.card-1 {
-
+/* collapsible div for projects */
+.collapsible,
+.sm-viewsource {
+  cursor: pointer;
+  width: 40%;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  padding: 10px;
+  letter-spacing: 2px;
+  background-color: #ffcccc;
+  color: #fff;
 }
-.card-2 {
 
+.active-collaspe, .collapsible:hover,
+.sm-viewsource:hover {
+  opacity: .6;
+  transition: 0.5s ease-in-out;
 }
+
+.sm-viewsource a{
+  color: #fff;
+}
+
+.collapsible-content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.collapsible-content ul {
+  list-style: none;
+  font-size: 14px;
+}
+.collapsible-content img {
+  width: 50%;
+  float: right;
+  padding: 10px;
+}
+
 /* shown on sm screens */
 .sm-view-project {
   text-align: center;
@@ -256,6 +292,12 @@ hr {
   padding: 15px;
   letter-spacing: 2px;
   background-color: #ffcccc;
+  color: #fff;
+}
+.view-website {
+  padding: 15px;
+  letter-spacing: 2px;
+  background-color: gold;
   color: #fff;
 }
 /* END PROJECTS */
@@ -319,7 +361,7 @@ hr {
   }
 
   /* hide while in lg screen  */
-  .sm {
+  .lg {
     display: none;
   }
 
@@ -352,7 +394,7 @@ hr {
     justify-content: space-between;
     width: 50%;
     margin: 0 auto;
-      padding-top: 250px;
+    /* padding-top: 250px; */
   }
   .download-files-lg {
     text-align: center;

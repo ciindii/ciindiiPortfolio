@@ -52,7 +52,7 @@
     </div>
   </div>
   <div id="wrapper">
-    <div id="about" class= "sm">
+    <div id="about" class="lg">
       <h2>a little about me</h2>
       <hr>
       <p>I'm a self-taught front-end web developer based in the rainy city of Seattle, WA. With a huge appetite for front-end development and UI Design, my hunger for learning will never end. </p>
@@ -62,68 +62,86 @@
       <h2>what i can do</h2>
       <hr>
       <div class="skills-content">
-      <span>Languages</span>
-      <p><i class="fab fa-html5"></i> HTML5</p>
-      <p><i class="fab fa-css3-alt"></i> CSS3</p>
-      <p><i class="fab fa-js-square"></i> JavaScript (ES5, ES6)</p>
+        <span>Languages</span>
+        <p><i class="fab fa-html5"></i> HTML5</p>
+        <p><i class="fab fa-css3-alt"></i> CSS3</p>
+        <p><i class="fab fa-js-square"></i> JavaScript (ES5, ES6)</p>
 
-      <span>Libraries</span>
-      <p><i class="fab fa-react"></i> ReactJS</p>
-      <p><i class="fab fa-bootstrap"></i> Bootstrap</p>
+        <span>Libraries</span>
+        <p><i class="fab fa-react"></i> ReactJS</p>
+        <p><i class="fab fa-bootstrap"></i> Bootstrap</p>
 
-      <span>Tools</span>
-      <p><i class="fab fa-adobe"></i> Photoshop</p>
-      <p><i class="fab fa-git-alt"></i> Git</p>
+        <span>Tools</span>
+        <p><i class="fab fa-adobe"></i> Photoshop</p>
+        <p><i class="fab fa-git-alt"></i> Git</p>
 
-      <span>Other</span>
-      <p><i class="fas fa-mobile"></i> Responsive Web Design</p>
+        <span>Other</span>
+        <p><i class="fas fa-mobile"></i> Responsive Web Design</p>
+      </div>
     </div>
-  </div>
-  <div id="projects">
-    <h2>projects</h2>
-    <hr>
-    <div class="project-container">
+    <div id="projects">
+      <h2>projects</h2>
+      <hr>
+      <div class="project-container">
 
-      <h3>Ellie Beauty House</h3>
-      <p class="date">//2018</p>
-      <div class="card">
-        <img src="img/screenEllieHouse.png" alt="Avatar" class="card-image">
-        <div class="middle">
-          <a href="#" class="text">view project</a>
-          <a href="#" class="text">source code</a>
+        <h3>Ellie Beauty House</h3>
+        <p class="date">//2018</p>
+        <div class="card">
+          <img src="img/screenEllieHouse.png" alt="Avatar" class="card-image">
+          <div class="middle sm">
+            <a href="#" class="text">view project</a>
+            <a href="#" class="text">source code</a>
+          </div>
+        </div>
+          <button class="sm-viewsource"><a href="#">source code</a></button>
+          <button class="collapsible">view project</button>
+        <div class="collapsible-content">
+          <button><a href="https://www.elliebeautyhouse.com/" class="view-website">view website</a></button>
+<ul>
+  <li>HTML5</li>
+  <li>CSS3</li>
+  <li>JavaScript</li>
+  <li>jQuery</li>
+  <li>Responsive</li>
+  <li>Bootstrap</li>
+</ul>
+<p>Ellie Beauty House is a beauty shop that specialize in Microblading, Permanent Makeup and Eyelash Extensions. The client required  functionality such as being fully responsive, easy to navigate, a beautiful UI, and a gallery to showcase thier work. </p>
+<p>The client requested that the website consisted of 4 web pages that would look beautiful on any device. I focused on creating a simple and easy to read pricing table for customers to get infomation. My goal was to build something that thier customers could easily find and understand the services in order to book an appointment.
+</p>
+  <img src="img/sshot-EBH-services.png" alt="">
+  <p>
+Ocassionaly the client would return to me with additional updates or new problems that needed solving and we’d work together on a solution.</p>
+        </div>
+        <h3>Prolific Elegance</h3>
+        <p class="date">//2019</p>
+        <div class="card">
+          <img src="img/screenProlificElegance.png" alt="Avatar" class="card-image">
+          <div class="middle sm">
+            <a href="#" class="text">view project</a>
+            <a href="#" class="text">source code</a>
+          </div>
+        </div>
+          <button class="sm-viewsource"><a href="#">source code</a></button>
+          <button class="collapsible">view project</button>
+        <div class="collapsible-content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
       </div>
-      <div class="sm sm-view-project">
-        <a href="#">view project</a>
+    </div>
+    <div id="contact">
+      <h2>stay connected</h2>
+      <hr>
+      <div class="email-div">
+        <a href="mailto:cindythitruong@gmail.com" class="tran" onmouseover="showemail(this)" onmouseout="hideemail(this)">
+          <i class="email-me fas fa-paper-plane"></i> ---- email me
+        </a>
       </div>
-      <h3>Prolific Elegance</h3>
-      <p class="date">//2019</p>
-      <div class="card">
-        <img src="img/screenProlificElegance.png" alt="Avatar" class="card-image">
-        <div class="middle">
-          <a href="#" class="text">view project</a>
-          <a href="#" class="text">source code</a>
-        </div>
-      </div>
-      <div class="sm sm-view-project">
-        <a href="#">view project</a>
+      <div class="socialmedia-sm">
+        <a href=""><i class="fab fa-github-alt"></i></a>
+        <a href="https://www.linkedin.com/in/cindy-truong-848002156/"><i class="fab fa-linkedin-in"></i></a>
+        <a href=""><i class="fab fa-instagram"></i></a>
       </div>
     </div>
-  </div>
-  <div id="contact">
-    <h2>stay connected</h2>
-    <hr>
-    <div class="email-div">
-      <a href="mailto:cindythitruong@gmail.com" class="tran" onmouseover="showemail(this)" onmouseout="hideemail(this)">
-        <i class="email-me fas fa-paper-plane"></i> ---- email me
-      </a>
-    </div>
-    <div class="socialmedia-sm">
-      <a href=""><i class="fab fa-github-alt"></i></a>
-      <a href="https://www.linkedin.com/in/cindy-truong-848002156/"><i class="fab fa-linkedin-in"></i></a>
-      <a href=""><i class="fab fa-instagram"></i></a>
-    </div>
-  </div>
   </div>
   <footer>
     cindy truong &copy;

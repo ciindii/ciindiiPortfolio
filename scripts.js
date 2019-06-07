@@ -18,6 +18,24 @@ document.getElementById("myNav").addEventListener("click", function(event){
 crYear = new Date().getFullYear();
 document.getElementById('copyright-year').innerHTML = `${crYear}`;
 
+
+//collapsible div for PROJECTS
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active-collaspe");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+
+
 //shows email address when hovering 'email me'
 function showemail(x) {
   x.innerHTML = 'cindythitruong@gmail.com';
