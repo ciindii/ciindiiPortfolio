@@ -284,6 +284,10 @@ hr {
 }
 
 /* shown on sm screens */
+.sm-projectButtonDiv,
+.view-website-div {
+  text-align: center;
+}
 .sm-view-project {
   text-align: center;
   padding: 30px;
@@ -295,10 +299,16 @@ hr {
   color: #fff;
 }
 .view-website {
-  padding: 15px;
+  cursor: pointer;
+  width: 30%;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  padding: 10px;
   letter-spacing: 2px;
   background-color: gold;
   color: #fff;
+  margin-top: 20px;
 }
 /* END PROJECTS */
 
